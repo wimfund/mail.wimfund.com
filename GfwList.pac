@@ -12,6 +12,7 @@ var FindProxyForURL = function(init, profiles) {
     "+web-List": function(url, host, scheme) {
         "use strict";
         if (/^onedrive\.live\.com$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)epochtimes\.com$/.test(host)) return "+HouseWin";
         return "+__ruleListOf_web-List";
     },
     "+__ruleListOf_web-List": function(url, host, scheme) {
@@ -274,6 +275,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/^http:\/\/www\.m-sport\.co\.uk/.test(url)) return "+HouseRos";
         if (/(?:^|\.)macgamestore\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)madonna-av\.com$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)mandiant\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)mangafox\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)mangafox\.me$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)manta\.com$/.test(host)) return "+HouseRos";
@@ -325,6 +327,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)parkansky\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)phmsociety\.org$/.test(host)) return "+HouseRos";
         if (/^http:\/\/.*\.pimg\.tw\//.test(url)) return "+HouseRos";
+        if (/(?:^|\.)podcast\.co$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)pure18\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)pytorch\.org$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)qq\.co\.za$/.test(host)) return "+HouseRos";
@@ -396,6 +399,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)xn--i2ru8q2qg\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)xn--oiq\.cc$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)xn--p8j9a0d9c9a\.xn--q9jyb4c$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)xn--9pr62r24a\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)abebooks\.com$/.test(host)) return "+HouseRos";
         if (/^https:\/\/.*\.s3\.amazonaws\.com/.test(url)) return "+HouseRos";
         if (/(?:^|\.)s3-ap-southeast-2\.amazonaws\.com$/.test(host)) return "+HouseRos";
@@ -473,7 +477,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)mohu\.ml$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)motiyun\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)msa-it\.org$/.test(host)) return "+HouseRos";
-        if (/(?:^|\.)dictionary\.goo\.ne\.jp$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)goo\.ne\.jp$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)go\.nesnode\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)international-news\.newsmagazine\.asia$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)nikkei\.com$/.test(host)) return "+HouseRos";
@@ -613,6 +617,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)kspcoin\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)kucoin\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)lbank\.info$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)liquiditytp\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)livecoin\.net$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)localbitcoins\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)mercatox\.com$/.test(host)) return "+HouseRos";
@@ -621,8 +626,11 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)okex\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)otcbtc\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)paxful\.com$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)poolin\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)rightbtc\.com$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)solv\.finance$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)topbtc\.com$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)tronscan\.org$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)xbtce\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)yobit\.net$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)zb\.com$/.test(host)) return "+HouseRos";
@@ -1133,7 +1141,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)nytstyle\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".steamcommunity.com") >= 0) return "+HouseRos";
         if (/(?:^|\.)steamcommunity\.com$/.test(host)) return "+HouseRos";
-        if (/^http:\/\/store\.steampowered\.com/.test(url)) return "+HouseRos";
+        if (/(?:^|\.)store\.steampowered\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)t\.me$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)updates\.tdesktop\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)telegram\.dog$/.test(host)) return "+HouseRos";
@@ -1354,7 +1362,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)51jav\.org$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".51luoben.com") >= 0) return "+HouseRos";
         if (/(?:^|\.)51luoben\.com$/.test(host)) return "+HouseRos";
-        if (scheme === "http" && url.indexOf(".5278.cc") >= 0) return "+HouseRos";
+        if (/(?:^|\.)5278\.cc$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".5299.tv") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf("5aimiku.com") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf("5i01.com") >= 0) return "+HouseRos";
@@ -1756,6 +1764,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)beevpn\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".behindkink.com") >= 0) return "+HouseRos";
         if (/(?:^|\.)beijing1989\.com$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)beijing2022\.art$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("beijingspring.com") >= 0) return "+HouseRos";
         if (/(?:^|\.)beijingspring\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".beijingzx.org") >= 0) return "+HouseRos";
@@ -1862,6 +1871,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)assets\.bwbx\.io$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)bloomfortune\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("blueangellive.com") >= 0) return "+HouseRos";
+        if (/(?:^|\.)blubrry\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".bmfinn.com") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".bnews.co") >= 0) return "+HouseRos";
         if (/(?:^|\.)bnews\.co$/.test(host)) return "+HouseRos";
@@ -1869,7 +1879,7 @@ var FindProxyForURL = function(init, profiles) {
         if (scheme === "http" && url.indexOf("boardreader.com/thread") >= 0) return "+HouseRos";
         if (/(?:^|\.)boardreader\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".bod.asia") >= 0) return "+HouseRos";
-        if (/^http:\/\/bod\.asia/.test(url)) return "+HouseRos";
+        if (/(?:^|\.)bod\.asia$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".bodog88.com") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".bolehvpn.net") >= 0) return "+HouseRos";
         if (/(?:^|\.)bolehvpn\.net$/.test(host)) return "+HouseRos";
@@ -1882,6 +1892,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)bookdepository\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("bookepub.com") >= 0) return "+HouseRos";
         if (/(?:^|\.)books\.com\.tw$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)borgenmagazine\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)botanwang\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".bot.nu") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".bowenpress.com") >= 0) return "+HouseRos";
@@ -2084,8 +2095,6 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)cdig\.info$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("cdjp.org") >= 0) return "+HouseRos";
         if (/(?:^|\.)cdjp\.org$/.test(host)) return "+HouseRos";
-        if (scheme === "http" && url.indexOf(".cdn-apple.com") >= 0) return "+HouseRos";
-        if (/(?:^|\.)cdn-apple\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".cdnews.com.tw") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf("cdp1989.org") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf("cdp1998.org") >= 0) return "+HouseRos";
@@ -2479,10 +2488,9 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)daliulian\.org$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".danke4china.net") >= 0) return "+HouseRos";
         if (/(?:^|\.)danke4china\.net$/.test(host)) return "+HouseRos";
-        if (scheme === "http" && url.indexOf(".danwei.org") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf("daolan.net") >= 0) return "+HouseRos";
-        if (scheme === "http" && url.indexOf(".daozhongxing.org") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf("darktoy.net") >= 0) return "+HouseRos";
+        if (/(?:^|\.)darrenliuwei\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)dastrassi\.org$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)daum\.net$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".david-kilgour.com") >= 0) return "+HouseRos";
@@ -2865,6 +2873,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)fanglizhi\.info$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)fangong\.org$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("fangongheike.com") >= 0) return "+HouseRos";
+        if (/(?:^|\.)fanhaolou\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".fanqiang.tk") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf("fanqianghou.com") >= 0) return "+HouseRos";
         if (/(?:^|\.)fanqianghou\.com$/.test(host)) return "+HouseRos";
@@ -3250,7 +3259,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)globalvpn\.net$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".glock.com") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf("gluckman.com/DalaiLama") >= 0) return "+HouseRos";
-        if (scheme === "http" && url.indexOf("gmbd.cn") >= 0) return "+HouseRos";
+        if (/(?:^|\.)gmgard\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)gmhz\.org$/.test(host)) return "+HouseRos";
         if (/^http:\/\/www\.gmiddle\.com/.test(url)) return "+HouseRos";
         if (/^http:\/\/www\.gmiddle\.net/.test(url)) return "+HouseRos";
@@ -3312,6 +3321,7 @@ var FindProxyForURL = function(init, profiles) {
         if (scheme === "http" && url.indexOf(".graphis.ne.jp") >= 0) return "+HouseRos";
         if (/(?:^|\.)graphis\.ne\.jp$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)graphql\.org$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)gravatar\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("greatfirewall.biz") >= 0) return "+HouseRos";
         if (/(?:^|\.)greatfirewallofchina\.net$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".greatfirewallofchina.org") >= 0) return "+HouseRos";
@@ -3861,6 +3871,7 @@ var FindProxyForURL = function(init, profiles) {
         if (scheme === "http" && url.indexOf(".istockphoto.com") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf("isunaffairs.com") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf("isuntv.com") >= 0) return "+HouseRos";
+        if (/(?:^|\.)isupportuyghurs\.org$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("itaboo.info") >= 0) return "+HouseRos";
         if (/(?:^|\.)itaboo\.info$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".italiatibet.org") >= 0) return "+HouseRos";
@@ -4063,7 +4074,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)kodingen\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)kompozer\.net$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".konachan.com") >= 0) return "+HouseRos";
-        if (/^http:\/\/konachan\.com/.test(url)) return "+HouseRos";
+        if (/(?:^|\.)konachan\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".kone.com") >= 0) return "+HouseRos";
         if (/(?:^|\.)koolsolutions\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".koornk.com") >= 0) return "+HouseRos";
@@ -4076,6 +4087,7 @@ var FindProxyForURL = function(init, profiles) {
         if (scheme === "http" && url.indexOf(".ksnews.com.tw") >= 0) return "+HouseRos";
         if (/(?:^|\.)ktzhk\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".kui.name/event") >= 0) return "+HouseRos";
+        if (/(?:^|\.)kukuku\.uk$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("kun.im") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".kurashsultan.com") >= 0) return "+HouseRos";
         if (/(?:^|\.)kurtmunger\.com$/.test(host)) return "+HouseRos";
@@ -4469,6 +4481,7 @@ var FindProxyForURL = function(init, profiles) {
         if (scheme === "http" && url.indexOf(".money-link.com.tw") >= 0) return "+HouseRos";
         if (/^http:\/\/money-link\.com\.tw/.test(url)) return "+HouseRos";
         if (/^http:\/\/www\.monlamit\.org/.test(url)) return "+HouseRos";
+        if (/(?:^|\.)moon\.fm$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".moonbbs.com") >= 0) return "+HouseRos";
         if (/(?:^|\.)moonbbs\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)moptt\.tw$/.test(host)) return "+HouseRos";
@@ -4650,6 +4663,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)newsmax\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)newstamago\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)newstapa\.org$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)newstatesman\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("newstarnet.com") >= 0) return "+HouseRos";
         if (/(?:^|\.)newsweek\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".newtaiwan.com.tw") >= 0) return "+HouseRos";
@@ -4790,8 +4804,10 @@ var FindProxyForURL = function(init, profiles) {
         if (scheme === "http" && url.indexOf("okk.tw") >= 0) return "+HouseRos";
         if (/^http:\/\/filmy\.olabloga\.pl\/player/.test(url)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("old-cat.net") >= 0) return "+HouseRos";
+        if (/(?:^|\.)olevod\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)olumpo\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".olympicwatch.org") >= 0) return "+HouseRos";
+        if (/(?:^|\.)omct\.org$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("omgili.com") >= 0) return "+HouseRos";
         if (/(?:^|\.)omnitalk\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)omnitalk\.org$/.test(host)) return "+HouseRos";
@@ -5157,6 +5173,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)pt\.im$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".ptt.cc") >= 0) return "+HouseRos";
         if (/(?:^|\.)ptt\.cc$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)pttgame\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".puffstore.com") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".puuko.com") >= 0) return "+HouseRos";
         if (/(?:^|\.)pullfolio\.com$/.test(host)) return "+HouseRos";
@@ -5289,6 +5306,7 @@ var FindProxyForURL = function(init, profiles) {
         if (scheme === "http" && url.indexOf("relaxbbs.com") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".relay.com.tw") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".releaseinternational.org") >= 0) return "+HouseRos";
+        if (/(?:^|\.)religionnews\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("religioustolerance.org") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf("renminbao.com") >= 0) return "+HouseRos";
         if (/(?:^|\.)renminbao\.com$/.test(host)) return "+HouseRos";
@@ -5361,6 +5379,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)rule34\.xxx$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".runbtx.com") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".rushbee.com") >= 0) return "+HouseRos";
+        if (/(?:^|\.)rusvpn\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".ruten.com.tw") >= 0) return "+HouseRos";
         if (/(?:^|\.)ruten\.com\.tw$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("rutube.ru") >= 0) return "+HouseRos";
@@ -5379,6 +5398,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)sacom\.hk$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)sadpanda\.us$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)safechat\.com$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)safeguarddefenders\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".safervpn.com") >= 0) return "+HouseRos";
         if (/(?:^|\.)safervpn\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".saintyculture.com") >= 0) return "+HouseRos";
@@ -5673,6 +5693,7 @@ var FindProxyForURL = function(init, profiles) {
         if (scheme === "http" && url.indexOf(".sonidodelaesperanza.org") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".sopcast.com") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".sopcast.org") >= 0) return "+HouseRos";
+        if (/(?:^|\.)nakedsecurity\.sophos\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".sorazone.net") >= 0) return "+HouseRos";
         if (/(?:^|\.)sos\.org$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("bbs.sou-tong.org") >= 0) return "+HouseRos";
@@ -5858,6 +5879,7 @@ var FindProxyForURL = function(init, profiles) {
         if (scheme === "http" && url.indexOf("tahr.org.tw") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".taipeisociety.org") >= 0) return "+HouseRos";
         if (/(?:^|\.)taipeisociety\.org$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)taipeitimes\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".taiwanbible.com") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".taiwancon.com") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".taiwandaily.net") >= 0) return "+HouseRos";
@@ -6050,8 +6072,10 @@ var FindProxyForURL = function(init, profiles) {
         if (scheme === "http" && url.indexOf("tibetan-alliance.org") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".tibetanarts.org") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".tibetanbuddhistinstitute.org") >= 0) return "+HouseRos";
-        if (/^http:\/\/tibetanbuddhistinstitute\.org/.test(url)) return "+HouseRos";
-        if (scheme === "http" && url.indexOf("tibetancommunity.org") >= 0) return "+HouseRos";
+        if (/(?:^|\.)tibetanbuddhistinstitute\.org$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)tibetancommunity\.org$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)tibetanentrepreneurs\.org$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)tibetanhealth\.org$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".tibetanjournal.com") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".tibetanlanguage.org") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".tibetanliberation.org") >= 0) return "+HouseRos";
@@ -6076,11 +6100,10 @@ var FindProxyForURL = function(init, profiles) {
         if (scheme === "http" && url.indexOf("tibetcharity.in") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".tibetchild.org") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".tibetcity.com") >= 0) return "+HouseRos";
-        if (scheme === "http" && url.indexOf(".tibetcorps.org") >= 0) return "+HouseRos";
-        if (scheme === "http" && url.indexOf(".tibetexpress.net") >= 0) return "+HouseRos";
-        if (/^http:\/\/tibetexpress\.net/.test(url)) return "+HouseRos";
-        if (scheme === "http" && url.indexOf("tibetfocus.com") >= 0) return "+HouseRos";
-        if (scheme === "http" && url.indexOf("tibetfund.org") >= 0) return "+HouseRos";
+        if (/(?:^|\.)tibetcorps\.org$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)tibetexpress\.net$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)tibetfocus\.com$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)tibetfund\.org$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".tibetgermany.com") >= 0) return "+HouseRos";
         if (/(?:^|\.)tibetgermany\.de$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".tibethaus.com") >= 0) return "+HouseRos";
@@ -6514,8 +6537,6 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)ustibetcommittee\.org$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".ustream.tv") >= 0) return "+HouseRos";
         if (/(?:^|\.)ustream\.tv$/.test(host)) return "+HouseRos";
-        if (scheme === "http" && url.indexOf(".usunitednews.com") >= 0) return "+HouseRos";
-        if (/^http:\/\/usunitednews\.com/.test(url)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("usus.cc") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".utopianpal.com") >= 0) return "+HouseRos";
         if (/(?:^|\.)utopianpal\.com$/.test(host)) return "+HouseRos";
@@ -6523,19 +6544,19 @@ var FindProxyForURL = function(init, profiles) {
         if (scheme === "http" && url.indexOf(".uvwxyz.xyz") >= 0) return "+HouseRos";
         if (/(?:^|\.)uvwxyz\.xyz$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".uwants.com") >= 0) return "+HouseRos";
+        if (/(?:^|\.)uwants\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".uwants.net") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf("uyghur.co.uk") >= 0) return "+HouseRos";
         if (/^http:\/\/uyghur-j\.org/.test(url)) return "+HouseRos";
+        if (/(?:^|\.)uyghuraa\.org$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)uyghuramerican\.org$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)uyghurbiz\.org$/.test(host)) return "+HouseRos";
-        if (scheme === "http" && url.indexOf(".uyghurcanadiansociety.org") >= 0) return "+HouseRos";
-        if (scheme === "http" && url.indexOf(".uyghurensemble.co.uk") >= 0) return "+HouseRos";
+        if (/(?:^|\.)uyghurcanadian\.ca$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)uyghurcongress\.org$/.test(host)) return "+HouseRos";
-        if (scheme === "http" && url.indexOf(".uyghurpen.org") >= 0) return "+HouseRos";
-        if (scheme === "http" && url.indexOf(".uyghurpress.com") >= 0) return "+HouseRos";
-        if (/^https:\/\/uyghurpress\.com/.test(url)) return "+HouseRos";
-        if (scheme === "http" && url.indexOf(".uyghurstudies.org") >= 0) return "+HouseRos";
-        if (/^http:\/\/uyghurstudies\.org/.test(url)) return "+HouseRos";
+        if (/(?:^|\.)uyghurpen\.org$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)uyghurpress\.com$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)uyghurstudies\.org$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)uyghurtribunal\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("uygur.org") >= 0) return "+HouseRos";
         if (/^http:\/\/uymaarip\.com\//.test(url)) return "+HouseRos";
         if (/(?:^|\.)v2fly\.org$/.test(host)) return "+HouseRos";
@@ -7036,6 +7057,7 @@ var FindProxyForURL = function(init, profiles) {
         if (scheme === "http" && url.indexOf(".yibaochina.com") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".yidio.com") >= 0) return "+HouseRos";
         if (/(?:^|\.)yidio\.com$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)yigeni\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("yilubbs.com") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf("xa.yimg.com") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".yingsuoss.com") >= 0) return "+HouseRos";
@@ -7209,5 +7231,10 @@ var FindProxyForURL = function(init, profiles) {
         "use strict";
         if (/^127\.0\.0\.1$/.test(host) || /^::1$/.test(host) || /^localhost$/.test(host) || host[host.length - 1] >= 0 && isInNet(host, "192.168.0.0", "255.255.0.0")) return "DIRECT";
         return "PROXY 192.168.108.1:8580; PROXY 192.168.101.1:8580; DIRECT";
+    },
+    "+HouseWin": function(url, host, scheme) {
+        "use strict";
+        if (/^127\.0\.0\.1$/.test(host) || /^::1$/.test(host) || /^localhost$/.test(host)) return "DIRECT";
+        return "PROXY 192.168.108.5:8580; PROXY 192.168.108.1:8580; PROXY 192.168.101.1:8580; DIRECT";
     }
 });
