@@ -13,6 +13,7 @@ var FindProxyForURL = function(init, profiles) {
         "use strict";
         if (/^onedrive\.live\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)epochtimes\.com$/.test(host)) return "+HouseWin";
+        if (/(?:^|\.)dwnews\.com$/.test(host)) return "+HouseWin";
         return "+__ruleListOf_web-List";
     },
     "+__ruleListOf_web-List": function(url, host, scheme) {
@@ -1382,6 +1383,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)6parknews\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)7capture\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".7cow.com") >= 0) return "+HouseRos";
+        if (/(?:^|\.)7-zip\.org$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".8-d.com") >= 0) return "+HouseRos";
         if (/^http:\/\/8-d\.com/.test(url)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("85cc.net") >= 0) return "+HouseRos";
@@ -6229,12 +6231,13 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)trt\.net\.tr$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("trtc.com.tw") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".truebuddha-md.org") >= 0) return "+HouseRos";
-        if (/^http:\/\/truebuddha-md\.org/.test(url)) return "+HouseRos";
+        if (/(?:^|\.)truebuddha-md\.org$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf("trulyergonomic.com") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".truth101.co.tv") >= 0) return "+HouseRos";
-        if (/^http:\/\/truth101\.co\.tv/.test(url)) return "+HouseRos";
+        if (/(?:^|\.)truth101\.co\.tv$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".truthontour.org") >= 0) return "+HouseRos";
-        if (/^http:\/\/truthontour\.org/.test(url)) return "+HouseRos";
+        if (/(?:^|\.)truthontour\.org$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)truthsocial\.com$/.test(host)) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".truveo.com") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".tsctv.net") >= 0) return "+HouseRos";
         if (scheme === "http" && url.indexOf(".tsemtulku.com") >= 0) return "+HouseRos";
