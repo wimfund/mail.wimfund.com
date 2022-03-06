@@ -27,9 +27,9 @@ http://39.135.138.59:18890/PLTV/88888910/224/3221225628/index.m3u8
 http://39.134.66.66/PLTV/88888888/224/3221225669/index.m3u8
 #EXTINF:-1 tvg-id="CCTV13.cn" tvg-logo="https://upload.wikimedia.org/wikipedia/zh/0/0b/CCTV-13_Logo.png" group-title="中文",CCTV-13新闻
 http://39.134.115.163:8080/PLTV/88888910/224/3221225638/index.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/zh/0/0b/CCTV-14_Logo.png" group-title="中文",CCTV-14少儿
+#EXTINF:-1 tvg-id="CCTV14.cn" tvg-logo="https://img2.baidu.com/it/u=170791067,124649355&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=250" group-title="中文",CCTV-14少儿
 http://39.134.115.163:8080/PLTV/88888910/224/3221225639/index.m3u8
-#EXTINF:-1 tvg-id="CCTV15.cn" group-title="中文",CCTV-15音乐
+#EXTINF:-1 tvg-id="CCTV15.cn" tvg-logo="https://img1.baidu.com/it/u=1934392260,2181507672&fm=26&fmt=auto" group-title="中文",CCTV-15音乐
 http://39.134.115.163:8080/PLTV/88888910/224/3221225641/index.m3u8
 #EXTINF:-1 tvg-id="CCTV17.cn" tvg-logo="https://www.lyngsat.com/logo/tv/cc/cctv-17-cn.png" group-title="中文",CCTV-17农业农村
 http://39.134.115.163:8080/PLTV/88888910/224/3221225908/index.m3u8
@@ -81,8 +81,6 @@ https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
 http://f24hls-i.akamaihd.net/hls/live/221147/F24_EN_HI_HLS/master.m3u8
 #EXTINF:-1 tvg-id="RedBullTV.at" tvg-logo="https://i.imgur.com/7NeBmWX.jpg" group-title="中文",Red Bull TV (1080p)
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
-#EXTINF:-1 tvg-id="RTDocumentary.ru" tvg-logo="https://i.imgur.com/XJGki3v.png" group-title="中文",RT Documentary (1080p)
-https://rt-rtd.gcdn.co/live/rtdoc/playlist.m3u8
 #EXTINF:-1 tvg-id="RTNews.ru" tvg-logo="https://i.imgur.com/tyXIHlj.png" group-title="中文",RT News (1080p) [Timeout]
 https://strm.yandex.ru/kal/rt_hd/rt_hd0.m3u8
 #EXTINF:-1 tvg-id="TVBRICSChinese.ru" tvg-logo="https://i.imgur.com/vLpm8tN.png" group-title="中文",TV BRICS Chinese (1080p) [Not 24/7]
