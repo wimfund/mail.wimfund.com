@@ -12,6 +12,7 @@ var FindProxyForURL = function(init, profiles) {
     "+web-List": function(url, host, scheme) {
         "use strict";
         if (/^onedrive\.live\.com$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)ms\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)epochtimes\.com$/.test(host)) return "+HouseWin";
         if (/(?:^|\.)dwnews\.com$/.test(host)) return "+HouseWin";
         return "+__ruleListOf_web-List";
@@ -625,6 +626,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)oanda\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)oex\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)okex\.com$/.test(host)) return "+HouseRos";
+        if (/(?:^|\.)okx\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)otcbtc\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)paxful\.com$/.test(host)) return "+HouseRos";
         if (/(?:^|\.)poolin\.com$/.test(host)) return "+HouseRos";
