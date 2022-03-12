@@ -343,5 +343,5 @@ https://5ac31d8a4c9af.streamlock.net/tunimmob/myStream/playlist.m3u8
 http://200.189.113.201/hls/tve.m3u8
 #EXTINF:-1 tvg-id="TVSTravel.us" tvg-logo="https://i.imgur.com/Bgqy4fL.jpg" group-title="Travel",TVS Travel Network (720p) [Not 24/7]
 https://rpn1.bozztv.com/36bay2/gusa-tvstravel/index.m3u8
-#EXTINF:-1 tvg-id="Bloomberg" tvg-logo="https://rndcdn.dstv.com/dstvcms/2018/01/16/Bloomberg_new_4-3_light_background_001_xlrg.png" group-title="VLC",Bloomberg
+#EXTINF:-1 tvg-id="Bloomberg" tvg-logo="https://rndcdn.dstv.com/dstvcms/2018/01/16/Bloomberg_new_4-3_light_background_001_xlrg.png" group-title="外部",Bloomberg
 https://youtu.be/dp8PhLsUcFE
