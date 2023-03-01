@@ -7235,6 +7235,6 @@ var FindProxyForURL = function(init, profiles) {
     "+WimShNAS": function(url, host, scheme) {
         "use strict";
         if (/^127\.0\.0\.1$/.test(host) || /^::1$/.test(host) || /^localhost$/.test(host)) return "DIRECT";
-        return "SOCKS 192.168.101.6:8581; DIRECT";
+        return "SOCKS5 192.168.101.6:8581; DIRECT";
     }
 });
