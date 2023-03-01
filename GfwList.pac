@@ -7240,6 +7240,6 @@ var FindProxyForURL = function(init, profiles) {
     "+HouseWin": function(url, host, scheme) {
         "use strict";
         if (/^127\.0\.0\.1$/.test(host) || /^::1$/.test(host) || /^localhost$/.test(host)) return "DIRECT";
-        return "PROXY 192.168.108.5:8580; PROXY 192.168.108.1:8580; PROXY 192.168.101.1:8580; DIRECT";
+        return "PROXY 192.168.101.2:8580; DIRECT";
     }
 });
